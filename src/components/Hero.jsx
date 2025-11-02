@@ -54,7 +54,7 @@ export const Hero = () => {
             <motion.a href="#projects" className="cta-primary" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               View My Work
             </motion.a>
-            <motion.a href="#contacts" className="cta-secondary" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <motion.a href="#contact" className="cta-secondary" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               Contact Me
             </motion.a>
           </motion.div>

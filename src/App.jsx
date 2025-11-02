@@ -8,6 +8,7 @@ import { Projects } from './components/Projects.jsx'
 import { Contact } from './components/Contact.jsx'
 import { s } from 'framer-motion/client'
 import emailjs from '@emailjs/browser';
+import {motion} from 'framer-motion'
 
 function App() {
 
@@ -24,9 +25,9 @@ function App() {
   <Hero/>
   <Projects/>
   <Contact/>
-  <>
-  <p>&copy; 2025 Sumanth. All rights reserved. </p>
-  </>
+  <motion.footer className='footer' initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true}} transition={{duration:0.6}}>
+    <p>&copy; 2025 Sumanth L. All rights reserved. </p>
+  </motion.footer>
   </div>
   )
 }
