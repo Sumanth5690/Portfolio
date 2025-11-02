@@ -7,6 +7,7 @@ import { Hero } from './components/Hero.jsx'
 import { Projects } from './components/Projects.jsx'
 import { Contact } from './components/Contact.jsx'
 import { s } from 'framer-motion/client'
+import emailjs from '@emailjs/browser';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
 
   useEffect(()=>{
   setIsLoaded(true);
+  emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
   },[])
  
   return(
